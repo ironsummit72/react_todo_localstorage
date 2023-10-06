@@ -1,0 +1,26 @@
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.appname{
+    margin-left: 25px;
+    color: white;
+}
+.themecontainer{
+    width: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-right: 30px;
+    font-weight: 500;
+    align-items: center;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
