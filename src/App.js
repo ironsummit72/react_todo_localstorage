@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Todoinput/>
+      <div class="app_container">
+        <Todoinput />
+      </div>
     </>
   );
 }
