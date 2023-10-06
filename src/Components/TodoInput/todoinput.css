@@ -1,0 +1,26 @@
+.todoinput_container{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoinput{
+    width: 65%;
+    height: 60%;
+    font-size: xx-large;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+.add{
+    width: 10%;
+    height: 60%;
+    font-size: xx-large;
+    font-weight: 550;
+    border: none;
+    background-color: #00b100;
+    margin-left: 5px;
+    color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
