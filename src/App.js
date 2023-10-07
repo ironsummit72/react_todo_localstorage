@@ -1,4 +1,4 @@
-import { useEffect,useRef,useState } from "react";
+import {useRef,useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Todoinput from "./Components/TodoInput/Todoinput";
@@ -8,13 +8,13 @@ const LocalStorageKey = "TODODB";
 
 function App() {
   const handleInputRef=useRef();
-const [todoItems, settodoItems]=useState(getLocalStorageData(LocalStorageKey))
+  const [todoItems, settodoItems]=useState(getLocalStorageData(LocalStorageKey)===null ?[]:getLocalStorageData(LocalStorageKey))
   let InputValue=undefined
-  useEffect(() => {
-    if (localStorage.getItem(LocalStorageKey) === null) {
-      createLocalStorage(LocalStorageKey);
-    }
-  },[]);
+  if (localStorage.getItem(LocalStorageKey) === null) {
+    console.log(localStorage.getItem(LocalStorageKey));
+    createLocalStorage(LocalStorageKey);
+  }
+ 
   
   const HandleInput=(e)=>{
   InputValue=e.target.value
