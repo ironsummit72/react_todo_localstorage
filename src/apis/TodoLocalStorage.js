@@ -3,7 +3,8 @@ function createTodo(todo, checked) {
   this.checked = checked;
 }
 function createLocalStorage(key) {
-  localStorage.setItem(key, []);
+  let data=[]
+  localStorage.setItem(key, JSON.stringify(data));
 }
 function getLocalStorageData(key) {
   if (localStorage.getItem(key) !== null) {
